@@ -1,0 +1,80 @@
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container{
+    background-color: white;
+    min-height: 70px;
+    border: 2px solid grey;
+    margin-top: 40px;
+}
+
+.box{
+    background-color: #17a2b8;
+    height: 90px;
+    width: 100%;
+}
+
+.user1{
+    border: 5px white solid;
+    width: 90px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -45px;
+    left: 20px;
+}
+
+.info{
+    background-color: white;
+    padding-left: 30px;
+}
+
+.name{
+    color: black;
+    margin: 0px;
+}
+
+.locationsym{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.locationsym img{
+    width: 18px;
+}
+
+.location{
+    background-color: white;
+}
+
+.seattle{
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.locationsym p{
+    padding-left: 20px;
+}
+
+.trades{
+    background-color: white;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.trades2{
+    background-color:white;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.gear{
+    background-color: white;
+    width: 18px;
+    top: 5px;
+}
+
