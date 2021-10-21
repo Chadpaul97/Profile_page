@@ -3,30 +3,20 @@ function changeName() {
     element.innerHTML = "Elizabeth Rose";
 }
 
+var requestCount = document.querySelector("#requests");
+var connectionCount = document.querySelector("#connections");
 
-function myFunction() {
-    var myobj = document.getElementById("demo");
-    myobj.remove();
-    var clicks = 2;
-    var add = 418;
-    function click() {
-        clicks -= 1;
-        add +=1;
-        document.getElementById("clicks").innerHTML = clicks;
-        document.getElementById("add").innerHTML = add;
-    }
-    click();
+
+
+function accept(id) {
+    var element = document.querySelector(id);
+    element.remove();
+    requestCount.innerText--;
+    connectionCount.innerText++;
 }
 
-
-function myFunctions() {
-    var myobj = document.getElementById("demo");
-    myobj.remove();
-    var clicks = 2;
-    function click() {
-        clicks -= 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    }
-    click();
+function deny(id) {
+    var element = document.querySelector(id);
+    element.remove();
+    requestCount.innerText--;
 }
-

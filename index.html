@@ -26,7 +26,7 @@
                 <div class="box"></div>
                 <img class="user1" src="user-circle.png" alt="User">
                 <div class="info">
-                    <h1 class="name">Jane Doe</h1>
+                    <h1 id="name">Jane Doe</h1>
                     <div class="locationsym">
                         <img class="location" src="map-marker.png"   alt="locationsym">
                         <p class="seattle">Seattle</p>
@@ -34,7 +34,7 @@
                     <p class="trades"> Developer | Engineer | Problem Solver</p>
                     <p class="trades2">Master of shadows and the Internet!</p>
                     <img class="gear" src="gear.png" alt="gear">
-                    <a href="#">edit profile</a>
+                    <a href="#" onclick="changeName()">edit profile</a>
                 </div>
             </div>
             <div class="container2">
@@ -49,27 +49,27 @@
             <div class="container3">
                 <div class="connectionbox">
                     <h5>Connection Request</h5>
-                    <div class="circle1">2</div>
+                    <div class="circle1" id="requests">2</div>
                 </div>
-                <div class="person">
+                <div id="request-1">
                     <p><img src="todd-s.jpg" alt="todd-s">Todd E</p>
-                    <div class="accept">
-                        <img src="accept-circle.png" alt="accept-circle">
-                        <img src="close-circle.png" alt="close-circle">
+                    <div class="accept" >
+                        <img src="accept-circle.png" alt="accept-circle" onclick='accept("#request-1")'>
+                        <img src="close-circle.png" alt="close-circle" onclick='deny("#request-1")'>
                     </div>
                 </div>
-                <div class="person">
+                <div id="request-2">
                     <p><img src="phil-s.jpg" alt="phil-s">Phil K</p>
                     <div class="accept">
-                        <img src="accept-circle.png" alt="accept-circle">
-                        <img src="close-circle.png" alt="close-circle">
+                        <img src="accept-circle.png" alt="accept-circle" onclick='accept("#request-2")'>
+                        <img src="close-circle.png" alt="close-circle" onclick='deny("#request-2")'>
                     </div>
                 </div>
             </div>
             <div class="container4">
                 <div class="connectionbox">
                     <h5>Your Connection</h5>
-                    <div class="circle2">500+</div>
+                    <div class="circle2" id="connections">418</div>
                 </div>
                 <p><img src="adrien-s.jpg" alt="adrien-s">Adrien D</p>
                 <p><img src="anne-s.jpg" alt="anne-s">Anne J</p>
@@ -81,5 +81,6 @@
             </div> 
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
